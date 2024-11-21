@@ -15,3 +15,9 @@ Repository to track development of CRUD API with Spring and SpringBoot
     <em>Note: JPA provides Transactional features out of the box, 
         hence we need not use Transactional in our Service class for a single entity</em> <br>
     Checkout [feat/repository](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/repository) for example of Spring JPA implementation <br><br>
+4. <strong>Why is Spring Data Rest used? </strong> <br>
+    Redefining controllers for each entity/ repository for basic CRUD operation is redundant. <br>
+    Data Rest project of Spring provides us out of box REST API for our entities. <br>
+    Once we include the data rest dependency in our project, 
+    Spring scans for JPA repositories in our project and creates endpoints for basic CRUD operations. <br>
+    This removes the need of defining the controller as well as the service layer for the entity. <br>
