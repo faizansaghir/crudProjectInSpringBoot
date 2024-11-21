@@ -14,4 +14,4 @@ Repository to track development of CRUD API with Spring and SpringBoot
     you just need to tell the Entity type and the primary key and use JpaRepository interface. <br>
     <em>Note: JPA provides Transactional features out of the box, 
         hence we need not use Transactional in our Service class for a single entity</em> <br>
-    Checkout feat/repository for example of Spring JPA implementation <br><br>
+    Checkout [feat/repository](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/repository) for example of Spring JPA implementation <br><br>
