@@ -21,3 +21,5 @@ Repository to track development of CRUD API with Spring and SpringBoot
     Once we include the data rest dependency in our project, 
     Spring scans for JPA repositories in our project and creates endpoints for basic CRUD operations. <br>
     This removes the need of defining the controller as well as the service layer for the entity. <br>
+    <em>Note: The endpoints are exposed as <code>[host]/[entity]</code></em> <br>
+    Checkout [feat/data-rest](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/data-rest) for example of Spring Data Rest implementation <br><br> 
