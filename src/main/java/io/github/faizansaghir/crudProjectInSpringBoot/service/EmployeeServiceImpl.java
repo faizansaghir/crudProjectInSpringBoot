@@ -15,6 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     private final EmployeeDao employeeDao;
     private final EmployeeRepository employeeRepository;
 
+    @Autowired
     public EmployeeServiceImpl(EmployeeDao employeeDao, EmployeeRepository employeeRepository) {
         this.employeeDao = employeeDao;
         this.employeeRepository = employeeRepository;
@@ -32,14 +33,14 @@ public class EmployeeServiceImpl implements EmployeeService{
         return employeeRepository.findById(id).orElse(null);
     }
 
-    @Transactional
+//    @Transactional
     @Override
     public Employee save(Employee employee) {
 //        return employeeDao.save(employee);
         return employeeRepository.save(employee);
     }
 
-    @Transactional
+//    @Transactional
     @Override
     public void deleteById(int id) {
 //        employeeDao.deleteById(id);

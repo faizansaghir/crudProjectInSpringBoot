@@ -11,3 +11,5 @@ Repository to track development of CRUD API with Spring and SpringBoot
     Redefining methods of a DAO is kind of a boiler code. <br>
     JPA is a project in Spring that provides the basic CRUD operations pre-defined, 
     you just need to tell the Entity type and the primary key and use JpaRepository interface. <br>
+    <em>Note: JPA provides Transactional features out of the box, 
+        hence we need not use Transactional in our Service class for a single entity</em> <br><br>
