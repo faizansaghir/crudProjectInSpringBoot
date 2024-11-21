@@ -1,6 +1,5 @@
 package io.github.faizansaghir.crudProjectInSpringBoot.rest;
 
-import io.github.faizansaghir.crudProjectInSpringBoot.dao.EmployeeDao;
 import io.github.faizansaghir.crudProjectInSpringBoot.entity.Employee;
 import io.github.faizansaghir.crudProjectInSpringBoot.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
