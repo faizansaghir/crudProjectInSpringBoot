@@ -28,3 +28,28 @@ Repository to track development of CRUD API with Spring and SpringBoot
     <pre>Example:
         spring.security.user.name=faizan
         spring.security.user.password=pass</pre> <br>
+5. <strong>Creating Users With Roles</strong> <br>
+    Once we create roles, the default roles in application.properties or generated default user role do not work. <br>
+    To create roles, once can use Configuration class with Bean definition that can return any <code>UserDetailsManager</code> <br>
+    <pre>Example:
+        @Configuration
+        public class DemoSecurityConfig {
+        
+            @Bean
+            public InMemoryUserDetailsManager userDetailsManager() {
+        
+                // Password follows {id}pass format where {noop} means storing password in plain text
+        
+                UserDetails john = User.builder()
+                        .username("john")
+                        .password("{noop}test123")
+                        .roles("EMPLOYEE")
+                        .build();
+        
+                ...
+                
+                return new InMemoryUserDetailsManager(john, mary, susan);
+            }
+        
+        }</pre>
+    The default Authorization type used by Spring Security is <code>Basic Auth</code> <br><br>
