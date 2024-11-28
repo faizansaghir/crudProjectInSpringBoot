@@ -20,4 +20,26 @@ Repository to track development of CRUD API with Spring and SpringBoot
     Data Rest project of Spring provides us out of box REST API for our entities. <br>
     Once we include the data rest dependency in our project, 
     Spring scans for JPA repositories in our project and creates endpoints for basic CRUD operations. <br>
-    This removes the need of defining the controller as well as the service layer for the entity. <br>
+    This removes the need of defining the controller as well as the service layer for the entity. <br><br>
+5. <strong>Spring Data REST Configurations and Sorting</strong> <br>
+    <strong>Configurations:</strong> <br>
+    &emsp;a. To change endpoint for an entity from default of plural of entity name, <br>
+    &emsp;&emsp;use <strong>@RepositoryRestResource(path='newPath')</strong>. <br>
+    <pre>Example:
+        @Repository
+        @RepositoryRestResource(path = "members")
+        public interface EmployeeRepository extends JpaRepository&lt;Employee, Integer&gt; {
+        } </pre> <br>
+    &emsp;b. To change page size of the response sent to client, <br>
+    &emsp;&emsp;Update the <code>spring.data.rest.default-page-size</code> property in <code>application.properties</code> file. <br>
+    <pre>Example:
+        spring.data.rest.default-page-size=3</pre>
+    <strong>Sorting:</strong> <br>
+    Spring data rest by default has endpoint with sorting features. <br>
+    To sort the response by an attribute, use <code>/apiEndpoint?sort=attributeName[,asc/desc]</code>. <br>
+    <pre>Example:
+    http://localhost:8080/api/employees?sort=lastName
+    http://localhost:8080/api/employees?sort=lastName,desc
+    http://localhost:8080/api/employees?sort=lastName,asc
+   
+    <em>Note: Default sorting technique is in Ascending order</em></pre> <br>
