@@ -14,3 +14,17 @@ Repository to track development of CRUD API with Spring and SpringBoot
     you just need to tell the Entity type and the primary key and use JpaRepository interface. <br>
     <em>Note: JPA provides Transactional features out of the box, 
         hence we need not use Transactional in our Service class for a single entity</em> <br><br>
+4. <strong>Spring Security Basics</strong> <br>
+    a. To include Spring security in our project, we need to add dependency for spring security. <br>
+    <pre>Example:
+        &lt;dependency&gt;
+           &lt;groupId>org.springframework.boot&lt;/groupId&gt;
+           &lt;artifactId>spring-boot-starter-security&lt;/artifactId&gt;
+        &lt;/dependency&gt;</pre> 
+    b. By default, post inclusion of Spring security, all endpoints are secured by default. <br>
+    c. The default username for the application is <code>user</code>. <br>
+    d. The default password for the application appears in the console during application startup. <br>
+    e. To override the default username and password, we need to update properties in application.properties file. <br>
+    <pre>Example:
+        spring.security.user.name=faizan
+        spring.security.user.password=pass</pre> <br>
