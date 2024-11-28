@@ -23,4 +23,7 @@ Repository to track development of CRUD API with Spring and SpringBoot
     This removes the need of defining the controller as well as the service layer for the entity. <br>
     <em>Note: The endpoints are exposed as <code>/[entity]</code> by default. <br>
     This can be changed using spring.data.rest.base-path property in application.properties</em> <br>
-    Checkout [feat/data-rest](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/data-rest) for example of Spring Data Rest implementation <br><br> 
+    Checkout [feat/data-rest](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/data-rest) for example of Spring Data Rest implementation <br><br>
+5. <strong>Spring Security Overview</strong> <br>
+  ![SpringSecurity](./img/springSecurity.PNG "SpringSecurity")
+  ![SpringSecurityFlow](./img/springSecurityFlow.PNG "SpringSecurity")
