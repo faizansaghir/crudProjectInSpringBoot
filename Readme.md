@@ -27,3 +27,4 @@ Repository to track development of CRUD API with Spring and SpringBoot
 5. <strong>Spring Security Overview</strong> <br>
   ![SpringSecurity](./img/springSecurity.PNG "SpringSecurity")
   ![SpringSecurityFlow](./img/springSecurityFlow.PNG "SpringSecurity")
+  Checkout [feat/security](https://github.com/faizansaghir/crudProjectInSpringBoot/tree/feat/security) for example of Spring Security <br><br>
