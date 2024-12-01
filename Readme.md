@@ -80,3 +80,5 @@ Repository to track development of CRUD API with Spring and SpringBoot
         ('susan','ROLE_MANAGER'),
         ('susan','ROLE_ADMIN');</pre>
     <em>Note: Spring hits the DB for each login request, hence latest information from DB will be used without app restart.</em> <br><br>
+7. <strong>Spring Security Login Process</strong> <br>
+   ![Spring Security Login Process](./img/springSecurityLoginProcess.PNG "springSecurityLoginProcess")
